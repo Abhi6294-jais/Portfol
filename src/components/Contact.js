@@ -5,6 +5,7 @@ import {
   FaPhone,
   FaLinkedin,
   FaGithub,
+ 
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -21,36 +22,37 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    const response = await fetch('https://formspree.io/f/mqalkdbq', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    });
-
-    if (response.ok) {
-      console.log('Form submitted successfully');
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    try {
+      const response = await fetch('https://formspree.io/f/mqalkdbq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
 
-      setTimeout(() => setIsSubmitted(false), 5000);
-    } else {
-      console.error('Form submission failed');
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        setIsSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
     }
-  } catch (error) {
-    console.error('Error submitting form:', error);
-  }
-};
+  };
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -124,6 +126,7 @@ const handleSubmit = async (e) => {
                 >
                   <FaGithub />
                 </a>
+             
               </div>
             </div>
           </div>

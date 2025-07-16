@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CodingProfiles from './components/CodingProfiles';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -56,7 +57,9 @@ function App() {
       />
       <Hero scrollToSection={scrollToSection} />
       <About />
+      <CodingProfiles/>
       <Skills />
+
       <Projects />
       <Contact />
       <Footer />

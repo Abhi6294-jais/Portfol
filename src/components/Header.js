@@ -8,7 +8,8 @@ const Header = ({ activeSection, scrollToSection, isMenuOpen, setIsMenuOpen }) =
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'coding-profiles', label: 'Coding Profiles' }, // Updated ID to match section
+    { id: 'contact', label: 'Contact' },
   ];
 
   return (
@@ -49,7 +50,10 @@ const Header = ({ activeSection, scrollToSection, isMenuOpen, setIsMenuOpen }) =
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => {
+                  scrollToSection(item.id);
+                  setIsMenuOpen(false);
+                }}
                 className={`py-2 font-medium transition-colors duration-300 ${
                   activeSection === item.id
                     ? 'text-indigo-600'

@@ -8,12 +8,12 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <div className="text-3xl font-bold text-indigo-400 mb-4">AlexM</div>
+          <div className="text-3xl font-bold text-indigo-400 mb-4">Abhishek Jaiswal</div>
           <p className="text-gray-400 mb-2 text-center">
-            Computer Science Student | AI Enthusiast | Web Developer
+            Maths & Computing Student | Web Developer
           </p>
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} Alex Morgan. All rights reserved.
+            &copy; {currentYear} Abhishek Jaiswal. All rights reserved.
           </p>
         </div>
       </div>

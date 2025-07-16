@@ -30,8 +30,7 @@ const About = () => {
               Technologies. I'm passionate about creating innovative websites.
             </p>
             <p className="text-gray-600 mb-8">
-              Outside of academics, I'm an active member of the Stanford AI Club
-              and participate in hackathons. I was recently interned at
+              Outside of academics, I'm regularly participating in coding contests. I was recently interned at
               ITJOBXS where I was developing an interview-experience page for
               the Ed-Tech Company.
             </p>

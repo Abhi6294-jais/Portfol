@@ -16,7 +16,7 @@ const Hero = ({ scrollToSection }) => {
         setIndex((prev) => prev + 1);
 
         if (index + 1 === fullText.length) {
-          setTimeout(() => setIsDeleting(true), 1000); // pause before deleting
+          setTimeout(() => setIsDeleting(true), 1000); 
         }
       } else {
         setDisplayedText(fullText.substring(0, index - 1));
@@ -66,6 +66,15 @@ const Hero = ({ scrollToSection }) => {
 
             >
               Contact Me
+            </button>
+             <button 
+              
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-medium transition transform duration-300 hover:-translate-y-1 hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <a href="https://drive.google.com/file/d/16JOdWMzkw42B0fWJfoXbWGrqDvvQ3HxL/view?usp=sharing">
+ Resume
+              </a>
+             
             </button>
           </div>
           
