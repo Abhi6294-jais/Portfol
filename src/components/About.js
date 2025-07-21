@@ -1,4 +1,4 @@
-// src/components/About.js
+
 import React from "react";
 import { FaGraduationCap, FaBook } from "react-icons/fa";
 

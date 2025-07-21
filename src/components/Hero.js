@@ -71,7 +71,7 @@ const Hero = ({ scrollToSection }) => {
               
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-medium transition transform duration-300 hover:-translate-y-1 hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              <a href="https://drive.google.com/file/d/16JOdWMzkw42B0fWJfoXbWGrqDvvQ3HxL/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1vfhQCp5MbR9TV8X_eUxydovWu3CM7J-V/view?usp=drive_link">
  Resume
               </a>
              
